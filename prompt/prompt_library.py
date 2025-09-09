@@ -45,7 +45,7 @@ context_qa_prompt = ChatPromptTemplate.from_messages([
     ("system", (
         "You are an assistant designed to answer questions using the provided context. Rely only on the retrieved "
         "information to form your response. If the answer is not found in the context, respond with 'I don't know.' "
-        "Keep your answer concise and no longer than three sentences.\n\n{context}"
+        "Keep your answer concise.\n\n{context}"
     )),
     MessagesPlaceholder("chat_history"),
     ("human", "{input}"),
