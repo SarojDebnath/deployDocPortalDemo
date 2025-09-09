@@ -3,13 +3,20 @@ faiss_db:
 
 
 embedding_model:
-  provider: "google"
-  model_name: "models/text-embedding-004"
+  provider: "azure"
+  model_name: "text-embedding-ada-002"
 
 retriever:
   top_k: 10
 
 llm:
+
+  azure:
+    provider: "azure"
+    model_name: "gpt-5-chat"
+    temperature: 0.2
+    max_output_tokens: 2048
+
   groq:
     provider: "groq"
     model_name: "deepseek-r1-distill-llama-70b"
