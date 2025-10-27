@@ -13,7 +13,7 @@
 <body>
   <header class="app-header">
     <div class="brand">
-      <span class="logo">📚</span>
+      <span class="logo">📊</span>
       <h1>Document Portal</h1>
     </div>
     <nav class="mode-switch">
@@ -27,7 +27,7 @@
     <!-- ============== ANALYSIS ============== -->
     <section id="tab-analysis" class="tab-panel active">
       <div class="card">
-        <h2>🔎 Analyze a Document</h2>
+        <h2>✨ Analyze a Document</h2>
         <p class="muted">Upload a PDF and get structured analysis.</p>
         <form id="form-analyze" class="form-grid" onsubmit="return false;">
           <div class="field">
@@ -49,7 +49,7 @@
     <!-- ============== COMPARE ============== -->
     <section id="tab-compare" class="tab-panel">
       <div class="card">
-        <h2>🆚 Compare Two Documents</h2>
+        <h2>⚖️ Compare Two Documents</h2>
         <p class="muted">Upload a reference PDF and an actual PDF to see page-wise differences.</p>
         <form id="form-compare" class="form-grid-2" onsubmit="return false;">
           <div class="field">
@@ -84,13 +84,13 @@
     <!-- ============== CHAT ============== -->
     <section id="tab-chat" class="tab-panel">
       <div class="card">
-        <h2>💬 Chat with your Documents</h2>
-        <p class="muted">Upload PDF/DOCX/TXT/XLSX; we’ll index to FAISS and enable RAG chat.</p>
+        <h2>🤖 Chat with your Documents</h2>
+        <p class="muted">Upload PDF/DOCX/TXT; we'll index to FAISS and enable RAG chat.</p>
 
         <form id="form-chat-index" class="form-grid" onsubmit="return false;">
           <div class="field">
             <label for="chat-files">Upload files</label>
-            <input id="chat-files" type="file" multiple accept=".pdf,.docx,.txt,.xlsx" />
+            <input id="chat-files" type="file" multiple accept=".pdf,.docx,.txt" />
             <small class="help">You can select multiple files.</small>
           </div>
 
@@ -151,8 +151,8 @@
   </main>
 
   <footer class="app-footer">
-    <div>© Document Portal • Demo UI</div>
-    <div class="tiny">Frontend only – hook to your FastAPI later.</div>
+    <div>© Document Portal • Intelligent Document Processing</div>
+    <div class="tiny">Powered by FastAPI & RAG</div>
   </footer>
 
   <script>
